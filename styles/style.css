@@ -104,9 +104,11 @@ nav .navbar-brand {
   font-size: 4rem;
 }
 
-nav .navbar-toggler,
-nav .navbar-toggler:active,
-nav .navbar-toggler:focus {
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
   border: none;
 }
 
