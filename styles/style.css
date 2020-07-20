@@ -226,7 +226,7 @@ nav .navbar-toggler i {
 
 .parallax {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background: -webkit-gradient(
       linear,
       left top,
@@ -234,9 +234,9 @@ nav .navbar-toggler i {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background-position: 0 50%;
   background-size: cover;
   text-align: center;
@@ -279,7 +279,7 @@ nav .navbar-toggler i {
 
 .second {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background: -webkit-gradient(
       linear,
       left top,
@@ -287,9 +287,9 @@ nav .navbar-toggler i {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background-position: 65% 50%;
   background-size: cover;
 }
@@ -347,7 +347,7 @@ nav .navbar-toggler i {
 
 .full-img {
   position: absolute;
-  height: 80%;
+  height: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -363,9 +363,11 @@ nav .navbar-toggler i {
 
 @media (min-width: 576px) {
   .parallax {
+    background-attachment: fixed;
     background-size: cover;
   }
   .second {
+    background-attachment: fixed;
     background-size: cover;
   }
   .gallery {
@@ -373,6 +375,8 @@ nav .navbar-toggler i {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 5rem 3rem;
   }
+  .full-img {
+  height: 80%;
 }
 
 @media (min-width: 992px) {
