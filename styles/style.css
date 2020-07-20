@@ -226,7 +226,7 @@ nav .navbar-toggler i {
 
 .parallax {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background: -webkit-gradient(
       linear,
       left top,
@@ -234,9 +234,9 @@ nav .navbar-toggler i {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/2.jpg") repeat scroll;
   background-position: 0 50%;
   background-size: cover;
   text-align: center;
@@ -279,7 +279,7 @@ nav .navbar-toggler i {
 
 .second {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background: -webkit-gradient(
       linear,
       left top,
@@ -287,9 +287,9 @@ nav .navbar-toggler i {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/IMG_0351.JPG") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat scroll;
   background-position: 80% 50%;
   background-size: cover;
 }
@@ -362,6 +362,12 @@ nav .navbar-toggler i {
 }
 
 @media (min-width: 576px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+  .second {
+    background-attachment: fixed;
+  }
   .gallery {
     -ms-grid-columns: (minmax(400px, 1fr)) [auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
