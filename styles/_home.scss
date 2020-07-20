@@ -1,0 +1,154 @@
+.home {
+  height: 100vh;
+  width: 100%;
+}
+
+#carouselHome {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  .carousel-control-prev-icon {
+    opacity: 0;
+  }
+  .carousel-control-next-icon {
+    opacity: 0;
+  }
+}
+
+nav {
+  width: 80%;
+  font-size: 2rem;
+  margin: auto;
+  padding: 5px;
+  z-index: 15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .home-insta {
+    max-width: 50px;
+  }
+
+  .navbar-brand {
+    font-size: 4rem;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    border: none;
+  }
+
+  .navbar-toggler i {
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: lavender;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  text-decoration: underline;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#home-sun {
+  object-position: 50% 95%;
+}
+
+#home-snow {
+  object-position: 12% 40%;
+}
+
+#home-flower {
+  object-position: 40% 80%;
+}
+
+.showcase.container-fluid {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.showcase .title {
+  margin-top: 60%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.showcase .herobuttoncontainer {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.hometogallery {
+  color: lavender;
+  border: 2px lavender solid;
+  border-radius: 0px;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: lowercase;
+  padding: 10px;
+  transition-duration: 0.3s;
+}
+
+.hometogallery:hover {
+  color: white;
+  border-color: white;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+@media (min-width: 576px) {
+  #carouselHome {
+    .carousel-control-prev-icon {
+      opacity: 100;
+    }
+    .carousel-control-next-icon {
+      opacity: 100;
+    }
+  }
+
+  .showcase .title {
+    position: absolute;
+    margin: 0;
+    top: 30%;
+    left: 20%;
+  }
+
+  .hometogallery {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    margin-left: 60px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
+
+  .showcase .herobuttoncontainer {
+    top: 90%;
+    width: 100%;
+  }
+}
