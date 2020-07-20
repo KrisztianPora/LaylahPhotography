@@ -376,7 +376,8 @@ nav .navbar-toggler i {
     margin: 5rem 3rem;
   }
   .full-img {
-  height: 80%;
+    height: 80%;
+  }
 }
 
 @media (min-width: 992px) {
