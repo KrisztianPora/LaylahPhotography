@@ -9,7 +9,7 @@ html {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -89,11 +89,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 nav .home-insta {
@@ -131,22 +131,22 @@ nav .navbar-toggler i {
   width: 100% !important;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #home-sun {
   -o-object-position: 50% 95%;
-     object-position: 50% 95%;
+  object-position: 50% 95%;
 }
 
 #home-snow {
   -o-object-position: 12% 40%;
-     object-position: 12% 40%;
+  object-position: 12% 40%;
 }
 
 #home-flower {
   -o-object-position: 40% 80%;
-     object-position: 40% 80%;
+  object-position: 40% 80%;
 }
 
 .showcase.container-fluid {
@@ -182,7 +182,7 @@ nav .navbar-toggler i {
   text-transform: lowercase;
   padding: 10px;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 .hometogallery:hover {
@@ -225,8 +225,26 @@ nav .navbar-toggler i {
 }
 
 .parallax {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/2.jpg") repeat fixed;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/2.jpg") repeat fixed;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../img/2.jpg") repeat fixed;
+  background: -o-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../img/2.jpg") repeat fixed;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../img/2.jpg") repeat fixed;
   background-position: 0 50%;
   background-size: cover;
   text-align: center;
@@ -243,11 +261,11 @@ nav .navbar-toggler i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .parallax .container ul {
@@ -255,11 +273,11 @@ nav .navbar-toggler i {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   list-style: none;
 }
 
@@ -268,8 +286,26 @@ nav .navbar-toggler i {
 }
 
 .second {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/IMG_0351.JPG") repeat fixed;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../img/IMG_0351.JPG") repeat fixed;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../img/2.jpg") repeat fixed;
+  background: -o-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../img/2.jpg") repeat fixed;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../img/2.jpg") repeat fixed;
   background-position: 80% 50%;
   background-size: cover;
 }
@@ -278,8 +314,8 @@ nav .navbar-toggler i {
   display: -ms-grid;
   display: grid;
   background-color: white;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 100vh;
   margin: 2rem 1rem;
   gap: 2rem;
@@ -293,7 +329,7 @@ nav .navbar-toggler i {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 1;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -331,20 +367,20 @@ nav .navbar-toggler i {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
-          transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
 .full-img.open {
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 @media (min-width: 576px) {
   .gallery {
-    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    -ms-grid-columns: (minmax(400px, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 5rem 3rem;
   }
 }
@@ -374,7 +410,7 @@ nav .navbar-toggler i {
 .about img {
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   margin: 10%;
   padding: 3px;
@@ -441,7 +477,7 @@ nav .navbar-toggler i {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
   }
   .about h1 {
     font-size: 4rem;
