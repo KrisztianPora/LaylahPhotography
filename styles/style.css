@@ -236,13 +236,13 @@ nav .navbar-toggler i {
   background: -o-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.5) 0
     ),
     url("../img/2.jpg") repeat fixed;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.5) 0
     ),
     url("../img/2.jpg") repeat fixed;
   background-position: 0 50%;
@@ -297,13 +297,13 @@ nav .navbar-toggler i {
   background: -o-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.5) 0
     ),
     url("../img/IMG_0351.JPG") repeat fixed;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.5) 0
     ),
     url("../img/IMG_0351.JPG") repeat fixed;
   background-position: 80% 50%;
