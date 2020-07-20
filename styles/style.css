@@ -293,19 +293,19 @@ nav .navbar-toggler i {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat fixed;
   background: -o-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat fixed;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url("../img/2.jpg") repeat fixed;
+    url("../img/IMG_0351.JPG") repeat fixed;
   background-position: 80% 50%;
   background-size: cover;
 }
