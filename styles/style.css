@@ -159,7 +159,7 @@ nav .navbar-toggler i {
 }
 
 .showcase .title {
-  margin-top: 30%;
+  margin-top: 50%;
   position: relative;
   top: 0;
   left: 0;
@@ -170,7 +170,7 @@ nav .navbar-toggler i {
 
 .showcase .herobuttoncontainer {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 0;
   width: 100%;
   text-align: center;
