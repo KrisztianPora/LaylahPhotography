@@ -73,12 +73,12 @@ a:active {
 
 #carouselHome .carousel-control-prev {
   opacity: 0;
-  width: 10%;
+  width: 0;
 }
 
 #carouselHome .carousel-control-next {
   opacity: 0;
-  width: 10%;
+  width: 0;
 }
 
 nav {
@@ -142,8 +142,8 @@ nav .navbar-toggler i {
 }
 
 #home-snow {
-  -o-object-position: 12% 40%;
-     object-position: 12% 40%;
+  -o-object-position: 15% 40%;
+     object-position: 15% 40%;
 }
 
 #home-flower {
@@ -197,9 +197,11 @@ nav .navbar-toggler i {
 @media (min-width: 576px) {
   #carouselHome .carousel-control-prev {
     opacity: 100;
+    width: 10%;
   }
   #carouselHome .carousel-control-next {
     opacity: 100;
+    width: 10%;
   }
   .showcase .title {
     position: absolute;
@@ -334,8 +336,10 @@ nav .navbar-toggler i {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .full-img.open {
