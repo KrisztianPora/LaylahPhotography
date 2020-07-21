@@ -334,8 +334,8 @@ nav .navbar-toggler i {
 
 .full-img {
   position: absolute;
-  max-width: 90%;
-  max-height: 95%;
+  max-height: 100%;
+  max-width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -345,7 +345,6 @@ nav .navbar-toggler i {
   transition: transform 0.25s ease-out;
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
   background: #eff0e8;
-  padding: 10px;
 }
 
 .full-img.open {
@@ -367,6 +366,11 @@ nav .navbar-toggler i {
     -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 5rem 3rem;
+  }
+  .full-img {
+    max-height: 95%;
+    max-width: 90%;
+    padding: 10px;
   }
 }
 
