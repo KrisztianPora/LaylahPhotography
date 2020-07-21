@@ -205,6 +205,9 @@ nav .navbar-toggler i {
     opacity: 100;
     width: 10%;
   }
+  .showcase .title {
+    margin-top: 30%;
+  }
   .hometogallery {
     font-size: 3rem;
   }
@@ -238,6 +241,9 @@ nav .navbar-toggler i {
     top: 0;
     left: 0;
     padding: 5px;
+  }
+  .showcase .herobuttoncontainer {
+    top: 75%;
   }
   .hometogallery {
     font-size: 2rem;
