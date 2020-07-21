@@ -205,6 +205,12 @@ nav .navbar-toggler i {
     opacity: 100;
     width: 10%;
   }
+  .hometogallery {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
   .showcase .title {
     position: absolute;
     margin: 0;
@@ -212,12 +218,6 @@ nav .navbar-toggler i {
     top: 30%;
     left: 20%;
   }
-  .hometogallery {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 992px) {
   .navbar-nav .nav-link {
     margin-left: 60px;
   }
@@ -228,6 +228,19 @@ nav .navbar-toggler i {
   .showcase .herobuttoncontainer {
     top: 90%;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 992px) and (orientation: landscape) {
+  .showcase .title {
+    margin-top: 8%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px;
+  }
+  .hometogallery {
+    font-size: 2rem;
   }
 }
 
@@ -383,6 +396,13 @@ nav .navbar-toggler i {
   }
 }
 
+@media all and (max-width: 992px) and (orientation: landscape) {
+  full-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
 .about {
   color: black;
 }
@@ -500,6 +520,15 @@ nav .navbar-toggler i {
   }
   h3 {
     font-size: 3.5rem;
+  }
+}
+
+@media all and (max-width: 992px) and (orientation: landscape) {
+  h2 {
+    font-size: 10rem;
+  }
+  h3 {
+    font-size: 1.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

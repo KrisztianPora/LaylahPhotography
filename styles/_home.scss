@@ -131,6 +131,12 @@ nav {
     }
   }
 
+  .hometogallery {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
   .showcase .title {
     position: absolute;
     margin: 0;
@@ -138,13 +144,6 @@ nav {
     top: 30%;
     left: 20%;
   }
-
-  .hometogallery {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 992px) {
   .navbar-nav .nav-link {
     margin-left: 60px;
   }
@@ -157,5 +156,18 @@ nav {
   .showcase .herobuttoncontainer {
     top: 90%;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 992px) and (orientation: landscape) {
+  .showcase .title {
+    margin-top: 8%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px;
+  }
+  .hometogallery {
+    font-size: 2rem;
   }
 }

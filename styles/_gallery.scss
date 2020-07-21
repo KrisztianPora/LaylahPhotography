@@ -155,3 +155,10 @@
     }
   }
 }
+
+@media all and (max-width: 992px) and (orientation: landscape) {
+  full-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
