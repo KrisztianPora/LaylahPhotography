@@ -89,6 +89,7 @@ nav {
   left: 0;
   z-index: 1;
   overflow: visible;
+  padding: 5px;
 }
 
 .showcase .herobuttoncontainer {
@@ -133,6 +134,7 @@ nav {
   .showcase .title {
     position: absolute;
     margin: 0;
+    padding: 0;
     top: 30%;
     left: 20%;
   }
