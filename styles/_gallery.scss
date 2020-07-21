@@ -110,11 +110,14 @@
 
 .full-img {
   position: absolute;
-  height: 50%;
+  max-width: 90%;
+  max-height: 95%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
   transition: transform 0.25s ease-out;
+  background: rgb(239, 240, 232);
+  padding: 10px;
 }
 .full-img.open {
   transform: translate(-50%, -50%) scale(1);
@@ -135,7 +138,6 @@
     margin: 5rem 3rem;
   }
   .full-img {
-    height: 80%;
   }
 }
 
