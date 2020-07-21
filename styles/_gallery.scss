@@ -157,8 +157,18 @@
 }
 
 @media all and (max-width: 992px) and (orientation: landscape) {
-  full-img {
+  .parallax {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position-y: 40%;
+    height: 200px;
+  }
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .full-img {
     max-height: 100%;
     max-width: 100%;
+    padding: 0;
   }
 }
