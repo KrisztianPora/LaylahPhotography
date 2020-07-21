@@ -16,5 +16,6 @@ popup.addEventListener("click", (e) => {
   if (e.target.classList.contains("popup")) {
     popup.classList.remove("open");
     original.classList.remove("open");
+    original.src = ``;
   }
 });
