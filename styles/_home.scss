@@ -7,11 +7,13 @@
   position: absolute;
   width: 100%;
   top: 0;
-  .carousel-control-prev-icon {
+  .carousel-control-prev {
     opacity: 0;
+    width: 10%;
   }
-  .carousel-control-next-icon {
+  .carousel-control-next {
     opacity: 0;
+    width: 10%;
   }
 }
 
@@ -117,10 +119,10 @@ nav {
 
 @media (min-width: 576px) {
   #carouselHome {
-    .carousel-control-prev-icon {
+    .carousel-control-prev {
       opacity: 100;
     }
-    .carousel-control-next-icon {
+    .carousel-control-next {
       opacity: 100;
     }
   }

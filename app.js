@@ -8,7 +8,7 @@ previews.forEach((preview) => {
     original.classList.add("open");
 
     const originalSrc = preview.getAttribute("data-original");
-    original.src = `./img/${originalSrc}`;
+    original.src = `./previews/medium/${originalSrc}`;
   });
 });
 

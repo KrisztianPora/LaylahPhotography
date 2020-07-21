@@ -9,7 +9,7 @@ html {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -71,12 +71,14 @@ a:active {
   top: 0;
 }
 
-#carouselHome .carousel-control-prev-icon {
+#carouselHome .carousel-control-prev {
   opacity: 0;
+  width: 10%;
 }
 
-#carouselHome .carousel-control-next-icon {
+#carouselHome .carousel-control-next {
   opacity: 0;
+  width: 10%;
 }
 
 nav {
@@ -89,11 +91,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .home-insta {
@@ -104,12 +106,9 @@ nav .navbar-brand {
   font-size: 4rem;
 }
 
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
+nav .navbar-toggler,
+nav .navbar-toggler:active,
+nav .navbar-toggler:focus {
   border: none;
 }
 
@@ -134,22 +133,22 @@ nav .navbar-toggler i {
   width: 100% !important;
   height: 100vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 #home-sun {
   -o-object-position: 50% 95%;
-  object-position: 50% 95%;
+     object-position: 50% 95%;
 }
 
 #home-snow {
   -o-object-position: 12% 40%;
-  object-position: 12% 40%;
+     object-position: 12% 40%;
 }
 
 #home-flower {
   -o-object-position: 40% 80%;
-  object-position: 40% 80%;
+     object-position: 40% 80%;
 }
 
 .showcase.container-fluid {
@@ -185,7 +184,7 @@ nav .navbar-toggler i {
   text-transform: lowercase;
   padding: 10px;
   -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .hometogallery:hover {
@@ -196,10 +195,10 @@ nav .navbar-toggler i {
 }
 
 @media (min-width: 576px) {
-  #carouselHome .carousel-control-prev-icon {
+  #carouselHome .carousel-control-prev {
     opacity: 100;
   }
-  #carouselHome .carousel-control-next-icon {
+  #carouselHome .carousel-control-next {
     opacity: 100;
   }
   .showcase .title {
@@ -228,23 +227,13 @@ nav .navbar-toggler i {
 }
 
 .parallax {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../previews/medium/IMG_0125JPG.jpg") repeat scroll;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.5))
-    ),
-    url("../previews/medium/IMG_0125JPG.jpg") repeat scroll;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../previews/medium/IMG_0125JPG.jpg") repeat scroll;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/2.jpg") repeat scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/2.jpg") repeat scroll;
   background-position: 0 50%;
   background-size: cover;
   text-align: center;
   z-index: -1;
-  height: 500px;
+  height: 200px;
 }
 
 .parallax .container {
@@ -281,18 +270,8 @@ nav .navbar-toggler i {
 }
 
 .second {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../previews/medium/IMG_0351JPG.jpg") repeat scroll;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.5)),
-      to(rgba(0, 0, 0, 0.5))
-    ),
-    url("../previews/medium/IMG_0351JPG.jpg") repeat scroll;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../previews/medium/IMG_0351JPG.jpg") repeat scroll;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../previews/medium/IMG_0351JPG.jpg") repeat scroll;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../previews/medium/IMG_0351JPG.jpg") repeat scroll;
   background-position: 65% 50%;
   background-size: cover;
 }
@@ -301,8 +280,8 @@ nav .navbar-toggler i {
   display: -ms-grid;
   display: grid;
   background-color: white;
-  -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   min-height: 100vh;
   margin: 2rem 1rem;
   gap: 2rem;
@@ -316,7 +295,7 @@ nav .navbar-toggler i {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   opacity: 1;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -354,28 +333,29 @@ nav .navbar-toggler i {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0.5);
-  transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
 
 .full-img.open {
   -webkit-transform: translate(-50%, -50%) scale(1);
-  transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
 }
 
 @media (min-width: 576px) {
   .parallax {
     background-attachment: fixed;
     background-size: cover;
+    height: 500px;
   }
   .second {
     background-attachment: fixed;
     background-size: cover;
   }
   .gallery {
-    -ms-grid-columns: (minmax(400px, 1fr)) [auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 5rem 3rem;
   }
   .full-img {
@@ -408,11 +388,11 @@ nav .navbar-toggler i {
 .about img {
   max-width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
   margin: 10%;
   padding: 3px;
-  border: 1px gray solid;
+  border: 2px lightgray solid;
 }
 
 .about .avatar {
@@ -434,7 +414,7 @@ nav .navbar-toggler i {
 }
 
 .about h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 .about p {
@@ -475,7 +455,7 @@ nav .navbar-toggler i {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
   }
   .about h1 {
     font-size: 4rem;
