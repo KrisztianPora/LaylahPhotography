@@ -164,6 +164,7 @@ nav .navbar-toggler i {
   top: 0;
   left: 0;
   z-index: 1;
+  overflow: visible;
 }
 
 .showcase .herobuttoncontainer {
